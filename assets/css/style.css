@@ -4,6 +4,7 @@
     --white: #FFF;
     --coral: #FF7F50;
     --black: #262626;
+    --darkblue: #305CC3;
 }
 
 /* Text Styling */
@@ -16,8 +17,8 @@ a:hover{
     text-decoration: none!important;
 }
 
-a:visited{
-    color: var(--white);
+a:visited {
+  color: inherit;
 }
 
 h2{
@@ -28,22 +29,28 @@ p{
   font-size: 1rem;
 }
 
+.blue{
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: var(--darkblue);
+}
+
 /* Container & Padding */
 
 .p-6{
     padding: 5rem 0;
 }
 
+
 /* Header Styling */
 
 header{
-    background-image:url(../images/banner_image.png)  ;
+    background-image:url(../images/banner_image2.jpg)  ;
     height: 62.5rem;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    overflow: hidden;
+background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 nav{
@@ -56,17 +63,19 @@ nav{
 
 .navbar-nav {
     align-items: center;
+    
 }
 
 .navbar-brand{
     font-family: "Playwrite US Modern", cursive!important;
     font-size: 4.3rem!important;
     margin: 0 1.2rem!important;
+    color: var(--white)!important;
     
 }
 
 a:hover{
-  color: var(--coral)!important;
+  color: var(--white)!important;
 }
 
 header .navbar li{
@@ -81,6 +90,7 @@ header .navbar li{
     text-align: center;
     text-decoration: none!important;
     transition: all 0.45s;
+    font-weight: 600;
   }
 
   &:hover {
